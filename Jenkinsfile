@@ -2,24 +2,9 @@ pipeline{
     agent any
     stages {
         stage("Git checkout"){
-            step{
+            steps{
                 git 'https://github.com/devopsfaisal/hello-world.git'
                 // git branch: 'practice', url: 'https://github.com/devopsfaisal/hello-world.git'
-            }
-        }
-        stage(""){
-            step{
-                
-            }
-        }
-        stage(""){
-            step{
-                
-            }
-        }
-        stage(""){
-            step{
-                
             }
         }
     }
