@@ -12,9 +12,7 @@ pipeline{
         }
         stage("Maven Build"){
             steps{
-                withMaven(maven: 'maven-3.9.2', mavenSettingsConfig: 'MAVEN_HOME') {
-                    sh 'mvn clean package'
-                }
+                sh 'mvn clean install'
             }
         }
     }
